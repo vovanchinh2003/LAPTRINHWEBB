@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+</head>
+<body>
+	
+  <form action="Servlet_FormProcessing" method="POST">
+    <label for="text-field">Text Field:</label>
+    <input type="text" id="text-field" name="text_field"><br>
+	
+    <input type="hidden" name="hidden_field" value="hidden_value"><br>
+
+    <label for="checkbox">Check Box:</label>
+    <input type="checkbox" id="checkbox" name="checkbox"><br>
+
+    <label for="listbox">List Box:</label>
+    <select id="listbox" name="list_box">
+      <option value="a">a</option>
+      <option value="b">b</option>
+      <option value="c">c</option>
+    </select><br>
+
+    <label for="radio1">Nam</label>
+    <input type="radio" id="radio1" name="radio_button" value="Nam"><br>
+
+    <label for="radio2">Nữ</label>
+    <input type="radio" id="radio2" name="radio_button" value="Nữ"><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
+

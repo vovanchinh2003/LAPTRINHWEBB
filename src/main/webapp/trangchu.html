@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/trangchu.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.tutorialjinni.com/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <title>Trang chủ</title>
+</head>
+
+<body>
+
+    <!-- <div class="overlay activee" data-overlay></div> -->
+    <div class="modal" data-modal>
+        <div class="modal-close-overlay" data-modal-overlay>
+            <div class="modal-content">
+                <a class="modal-close-btn" data-modal-close>
+                    <i class='bx bx-x'></i>
+                </a>
+                <div class="newsletter-img">
+                    <img src="img/moda2.png" alt="subscribe newsletter">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="notification-toast" data-toast>
+        <a href="" class="toast-close-btn" data-toast-close>
+            <i class='bx bx-x'></i>
+        </a>
+        <div class="toast-banner">
+            <img src="img/s10.jfif" width="80" height="70" alt="">
+        </div>
+        <div class="toast-detail">
+            <p class="toast-message">
+                Ai đó mới mua hàng
+            </p>
+            <p class="toast-title">Áo Thun positive </p>
+            <div class="toast-meta">
+                <time datetime="PT2M">1 giây trước</time>
+            </div>
+        </div>
+    </div>
+    <div class="notification-toastt" data-toast>
+        <a href="" class="toast-close-btn" data-toast-close>
+            <i class='bx bx-x'></i>
+        </a>
+        <div class="toast-banner">
+            <img src="img/s12.jfif" width="80" height="70" alt="">
+        </div>
+        <div class="toast-detail">
+            <p class="toast-message">
+                Ai đó mới mua hàng
+            </p>
+            <p class="toast-title">Áo Sơ Mi Cơ Bản </p>
+            <div class="toast-meta">
+                <time datetime="PT2M">1 giây trước</time>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="wrapper">
+            <label for="menu-btn" class=" btn menu-btn"><i class='bx bx-menu'></i></label>
+            <div class="logo"><a href="trangchu.html"><img src="img/logo-footer.png" width="160" height="40" alt=""></a>
+            </div>
+            <input type="radio" name="slide" class="showDrop" id="menu-btn">
+            <input type="radio" name="slide" class="showDrop" id="cancel-btn">
+            <ul class="nav-links">
+                <label for="cancel-btn" class="btn cancel-btn"><i class='bx bx-x'></i></label>
+                <li><a class="mobile-itemm" href="#">NAM</a>
+                    <input type="checkbox" class="showDrop" id="showDrop">
+                    <label for="showDrop" class="mobile-item">NAM</label>
+                    <ul class="drop-menu">
+                        <li><a href="#">Áo khoác</a></li>
+                        <li><a href="#">Áo blazer</a></li>
+                        <li><a href="#">Áo dạ</a></li>
+                        <li><a href="#">Áo vest</a></li>
+                        <li><a href="#">Áo măng tô</a></li>
+                    </ul>
+                </li>
+                <li><a class="mobile-itemm" href="#">NỮ</a>
+                    <input type="checkbox" class="showDrop" id="showMega">
+                    <label for="showMega" class="mobile-item">NỮ</label>
+                    <div class="mega-box">
+                        <div class="content">
+
+                            <div class="rowh">
+                                <header>ÁO KHOÁC</header>
+                                <ul class="mage-links">
+                                    <li><a href="#">Áo khoác</a></li>
+                                    <li><a href="#">Áo blazer</a></li>
+                                    <li><a href="#">Áo dạ</a></li>
+                                    <li><a href="#">Áo vest</a></li>
+                                    <li><a href="#">Áo măng tô</a></li>
+                                </ul>
+                            </div>
+                            <div class="rowh">
+                                <header>QUẦN & JUMPSUIT</header>
+                                <ul class="mage-links">
+                                    <li><a href="#">Quần jeans</a></li>
+                                    <li><a href="#">Quần dài</a></li>
+                                    <li><a href="#">Quần lửng/short</a></li>
+                                    <li><a href="#">Jumpsuit</a></li>
+                                </ul>
+                            </div>
+                            <div class="rowh">
+                                <header>Chân váy</header>
+                                <ul class="mage-links">
+                                    <li><a href="#">Chân Váy</a></li>
+                                    <li><a href="#">Chân váy xếp ly</a></li>
+                                    <li><a href="#"> Chân váy chữ A</a></li>
+                                </ul>
+                            </div>
+                            <div class="rowh">
+                                <header>Đầm</header>
+                                <ul class="mage-links">
+                                    <li><a href="#">Đầm</a></li>
+                                    <li><a href="#"> Đầm maxi/voan</a></li>
+                                    <li><a href="#">Đầm thun</a></li>
+                                    <li><a href="#"> Senora - Đầm dạ hội</a></li>
+                                </ul>
+                            </div>
+                            <div class="rowh">
+                                <header>Sét đồ đồng bộ</header>
+                                <ul class="mage-links">
+                                    <li><a href="#"> Áo - Váy</a></li>
+                                    <li><a href="#"> Áo - Quần</a></li>
+                                    <li><a href="#"> Đồ mặc nhà</a></li>
+                                    <li><a href="#">Pijama</a></li>
+                                </ul>
+                            </div>
+                            <div class="rowh">
+                                <header>Đồ lót</header>
+                                <ul class="mage-links">
+                                    <li><a href="#"> Áo bra</a></li>
+                                    <li><a href="#"> Quần lót</a></li>
+                                    <li><a href="#"> Bikini</a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                            <div class="rowh">
+                                <header>Đồ lót</header>
+                                <ul class="mage-links">
+                                    <li><a href="#"> Áo bra</a></li>
+                                    <li><a href="#"> Quần lót</a></li>
+                                    <li><a href="#"> Bikini</a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                            <div class="rowh">
+                                <header>GIÀY & DÉP</header>
+                                <ul class="mage-links">
+                                    <li><a href="#">Giày/dép&Sandals </a></li>
+                                    <li><a href="#">Sneakers /Boots</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">TRẺ EM</a></li>
+                <li><a href="" class="test" style="color: red;">SALE UP TO 70%</a></li>
+                <li><a href="">BỘ SƯU TẬP</a></li>
+                <li><a href="">LIFESTYLE</a></li>
+                <li><a href="">VỀ CHÚNG TÔI</a></li>
+            </ul>
+            <ul class="nav-link">
+                <li>
+                    <a href="#"><input type="text" placeholder="Tìm kiếm...">
+                        <i class="fas fa-search"></i></a>
+                </li>
+                <li><a href="#"><i class='bx bx-headphone bx-tada'></i></a></li>
+                <li><a href="dangnhap1.html"><i
+                            class='bx bx-user'></i></a></li>
+                <li><a id="cart-shop" href="cart.html"><i
+                            class="bx bx-shopping-bag add-cart-top"><sup class="total-count"
+                                data-count='0'></sup></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="menu2" class="section-p1 row">
+        <div class="menu2-left">
+            <a href="">
+                <p>FREESHIP ĐƠN HÀNG TỪ 2 TRIỆU</p>
+            </a>
+        </div>
+        <div class="menu2-center">
+            <a href="">
+                <p>BẢO HÀNH TRỌN ĐỜI</p>
+            </a>
+        </div>
+        <div class="menu2-right">
+            <a href="">
+                <p>CHÍNH SÁCH THẺ THÀNH VIÊN</p>
+            </a>
+        </div>
+    </section>
+
+
+    <section id="slider">
+
+        <div class="aspect-ratio-169 ">
+            <img src="img/slider2.jpg" alt="">
+            <img src="img/slider1.jpg" alt="">
+            <img src="img/slider3.jpg" alt="">
+            <img src="img/slider4.jpg" alt="">
+        </div>
+        <div class="dot-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/f1.png" alt="">
+            <h6 style="--clr:rgb(242, 199, 232);color: rgb(7, 188, 254);">Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/f2.png" alt="">
+            <h6 style="--clr:rgb(149, 199, 238);color: rgb(255, 0, 212);">Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/f3.png" alt="">
+            <h6 style="--clr:rgb(0, 254, 13);color: green;">Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/f4.png" alt="">
+            <h6 style="--clr:rgb(149, 199, 238);color: rgb(221, 0, 255);">Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/f5.png" alt="">
+            <h6 style="--clr:rgb(247, 0, 255);color: rgb(149, 199, 238);">Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/f6.png" alt="">
+            <h6 style="--clr:rgb(245, 230, 158);color: rgb(13, 255, 0);">F24/7 Support</h6>
+        </div>
+    </section>
+
+
+    <section id="new">
+        <h2 style="text-align: center ; font-size: 50px; letter-spacing: 2px;    font-family: 'Montserrat';
+        ">NEW ARRIVAL</h2>
+        <div class="product" id="banchay">
+            <!--- ban chay-->
+        </div>
+    </section>
+
+    <section class="home-promote section-p1">
+        <div class="title-section">Qùa xịn tháng 10</div>
+        <div class="list-promote">
+            <div class="item-promote">
+                <a href="">
+                    <img src="img/p1.jpg" class="img-pro" alt="">
+                </a>
+                <div class="title-promote">
+                    <a href="">Combo quà tặng 1</a>
+                </div>
+            </div>
+            <div class="item-promote">
+                <a href="">
+                    <img src="img/p2.jpg" class="img-pro" alt="">
+                </a>
+                <div class="title-promote">
+                    <a href="">Combo quà tặng 2</a>
+                </div>
+            </div>
+            <div class="item-promote">
+                <a href="">
+                    <img src="img/p3.jpg" class="img-pro" alt="">
+                </a>
+                <div class="title-promote">
+                    <a href="">Combo quà tặng 3</a>
+                </div>
+            </div>
+            <div class="item-promote">
+                <a href="">
+                    <img src="img/p4.jpg" class="img-pro" alt="">
+                </a>
+                <div class="title-promote">
+                    <a href="">Combo quà tặng 4</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="img">
+        <div class="img-top section-p3">
+            <img src="img/menu1.jpg" style="width: 100%; height: 100%; border-radius: 100px 0px; " alt="">
+        </div>
+        <div class="img-top section-p3">
+            <img src="img/menu3.jpg" style="width: 100%; height: 100%; border-radius: 100px 0px;
+            " alt="">
+        </div>
+    </section>
+
+    <div class="owll-carousel section-p1">
+        <div class="carousell owl-carousel">
+            <div class="card-1">
+                <img src="img/h1.jpg" alt="">
+            </div>
+            <div class="card-1">
+                <img src="img/h2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".carousell").owlCarousel({
+            items: 2,
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            // nav: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                700: {
+                    items: 2,
+                    nav: false
+                },
+                900: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 2,
+                    nav: false
+                },
+            }
+        });
+    </script>
+
+    <section class="owll-carousel section-p1">
+        <div class="title-gal">gallery</div>
+        <div class="carousel owl-carousel">
+            <div class="card-1">
+                <img src="img/g1.jpg" alt="">
+            </div>
+            <div class="card-1">
+                <img src="img/g2.jpg" alt="">
+            </div>
+            <div class="card-1">
+                <img src="img/g3.jpg" alt="">
+            </div>
+            <div class="card-1">
+                <img src="img/g4.jpg" alt="">
+            </div>
+            <div class="card-1">
+                <img src="img/g5.jpg" alt="">
+            </div>
+            <div class="card-1">
+                <img src="img/g7.jpg" alt="">
+            </div>
+            <div class="card-1">
+                <img src="img/gsp1.4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <script>
+        $(".carousel").owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            // nav: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                700: {
+                    items: 2,
+                    nav: false
+                },
+                900: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: false
+                },
+            }
+        });
+    </script>
+
+    <section id="footer" class="section-p1 ">
+        <div class="footer-top">
+            <div class="img">
+                <img src="img/logo-footer.png" alt="">
+                <img src="img/dam.png" alt="">
+                <img src="img/tb.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#">Công ty Cổ phần Dự Kim với số đăng ký <br> kinh doanh: 0105777650</a></li>
+                <li><a href="#"><span>Địa chỉ đăng ký:</span> Tổ dân phố Tháp, P.Đại <br> Mỗ, Q.Nam Từ Liêm, TP.Hà Nội,
+                        Việt Nam</a></li>
+                <li><a href="#"><span>Số điện thoại:</span> 0243 205 2222</a></li>
+            </ul>
+            <div class="icon">
+                <i style="--clr:rgb(30, 0, 255);" class='bx bxl-facebook'></i>
+                <i style="--clr:red;" class='bx bxl-google'></i>
+                <i style="--clr:red;" class='bx bx-bullseye'></i>
+                <i style="--clr:red;" class='bx bxl-youtube'></i>
+            </div>
+            <button>HOTLINE: 0246 662 3434</button>
+        </div>
+        <div class="footer-left">
+            <h3>GIỚI THIỆU</h3>
+            <ul>
+                <li><a href="#">Về IVY moda</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Hệ thống cửa hàng</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h3>DỊCH VỤ KHÁCH HÀNG</h3>
+            <ul>
+                <li><a href="#">Chính sách điều khoản</a></li>
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+                <li><a href="#">Chính sách bảo hành</a></li>
+                <li><a href="#">Chính sách giao nhận vận chuyển</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>LIÊN HỆ</h3>
+            <ul>
+                <li><a href="#">Hotline</a></li>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Live Chat</a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="footer-container">
+            <div class="footer-container-top">
+                <p>Nhận thông tin các chương trình của IVY moda</p>
+                <div class="footer-container-top-right">
+                    <input placeholder="Nhập địa chỉ email..." type="text">
+                    <button>ĐĂNG KÝ</button>
+                </div>
+            </div>
+            <div class="footer-container-right">
+                <h3>Download App</h3>
+                <img src="img/ap.png" alt="">
+                <img src="img/go.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="footer-container-botthom">
+        <p>©IVYmoda All rights reserved</p>
+    </div>
+    <script>
+        // $(document).on('click', '.add-cart', function (e) {
+        //     e.preventDefault();
+        //     var parent = $(this).parents('#banchay');
+        //     var src = parent.find('img').attr('src');
+        //     alert(src)
+        // });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/trangchu.js"></script>
+    <script src="js/giohang.js"></script>
+</body>
+
+</html>
