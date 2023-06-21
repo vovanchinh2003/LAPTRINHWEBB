@@ -35,7 +35,10 @@ public class Servlet_FormProcessing extends HttpServlet {
 		String checkbox = request.getParameter("checkbox");
 		String listbox = request.getParameter("list_box");
 		String radiobutton = request.getParameter("radio_button");
-		out.print("text_field: " + text_field + " Check box: " + checkbox + "listbox: " + listbox + " radiobutton: " + radiobutton  );
+		out.print("Text_field: " + text_field + "</p>");
+		out.print(" Check box: " + checkbox + "</p>");
+		out.print("Listbox: " + listbox + "</p>");
+		out.print("Radiobutton: " + radiobutton + "</p>");
 	}
 
 	/**

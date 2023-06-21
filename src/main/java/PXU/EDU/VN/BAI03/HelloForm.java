@@ -1,4 +1,4 @@
-package PXU.EDU.VN.BAI03;
+	package PXU.EDU.VN.BAI03;
 
 import java.io.IOException;
 import java.io.PrintWriter;

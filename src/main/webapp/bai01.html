@@ -1,34 +1,95 @@
 <!DOCTYPE html>
 <html>
+	<meta charset="UTF-8">
 <head>
-  <title>Form Example</title>
+  <title>Bài 3</title>
 </head>
 <body>
-	
-  <form action="Servlet_FormProcessing" method="POST">
+  <style>
+    /* CSS styles for form */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="hidden"],
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      margin-top: 10px;
+      background-color: #4caf50;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  </style>
+   <form action="Servlet_FormProcessing" method="POST">
     <label for="text-field">Text Field:</label>
-    <input type="text" id="text-field" name="text_field"><br>
-	
-    <input type="hidden" name="hidden_field" value="hidden_value"><br>
+     <input type="text" id="text_field" name="text_field">
+ 
+     <input type="hidden" name="hidden_field" value="Hidden Value">
+ 
+     <label for="checkbox">Check Box:</label>
+     <input type="checkbox" id="checkbox" name="checkbox">
+ 
+     <label for="listbox">List Box:</label>
+     <select id="list_box" name="list_box">
+       <option value="a">a</option>
+       <option value="b">b</option>
+       <option value="c">c</option>
+     </select>
+ 
+     <label>Radio Button:</label>
+     <input type="radio" id="radio1" name="radio_button" value="NAM">
+     <label for="radio">NAM</label>
+     <input type="radio" id="radio2" name="radio_button" value="NỮ">
+     <label for="radio">NỮ</label>
+     <input type="radio" id="radio3" name="radio_button" value="KHÔNG XÁC ĐỊNH">
+     <label for="radio">KHÔNG XÁC ĐỊNH</label>
+     <input type="submit" value="Submit">
+    </form>
 
-    <label for="checkbox">Check Box:</label>
-    <input type="checkbox" id="checkbox" name="checkbox"><br>
-
-    <label for="listbox">List Box:</label>
-    <select id="listbox" name="list_box">
-      <option value="a">a</option>
-      <option value="b">b</option>
-      <option value="c">c</option>
-    </select><br>
-
-    <label for="radio1">Nam</label>
-    <input type="radio" id="radio1" name="radio_button" value="Nam"><br>
-
-    <label for="radio2">Nữ</label>
-    <input type="radio" id="radio2" name="radio_button" value="Nữ"><br>
-
-    <input type="submit" value="Submit">
-  </form>
 </body>
 </html>
 

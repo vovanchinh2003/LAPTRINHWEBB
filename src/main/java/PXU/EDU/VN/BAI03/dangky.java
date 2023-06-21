@@ -38,6 +38,8 @@ public class dangky extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+//		response.setContentType("application/json");
+		response.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
@@ -48,9 +50,9 @@ public class dangky extends HttpServlet {
         String email = request.getParameter("email");
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-
+        
         out.println("<h2>Thông tin đăng ký</h2>");
-        out.println("<p><strong>Họ:</strong> " + firstName + "</p>");
+        out.println("<p><strong>Họ:</strong> " + firstName + "</p>" );
         out.println("<p><strong>Tên:</strong> " + lastName + "</p>");
         out.println("<p><strong>Ngày sinh:</strong> " + dob + "</p>");
         out.println("<p><strong>Giới tính:</strong> " + gender + "</p>");

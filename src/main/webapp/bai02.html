@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Bài 04</title>
+<title>Bài 03</title>
 </head>
 <body>
 	<style>
@@ -19,6 +19,7 @@
     label {
       display: block;
       margin-top: 10px;
+      color: black;
     }
     .h1{
 		color: red;
@@ -26,62 +27,66 @@
 	}
 	
 	#form {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Poppins';
-}
-#form {
-    background: url(../img/nen.jpeg);
-    background-size: cover;
-    background-position-y: -100px;
-}
+	    height: 100vh;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    font-family: 'Poppins';
+	}
+	#form {
+	    background: url(../img/nen.jpeg);
+	    background-size: cover;
+	    background-position-y: -100px;
+	}
+	
+	.container {
+	    width: 400px;
+	    position: absolute;
+	    border: none;
+	    border-radius: 10px;
+	    padding: 40px;
+	    color: #f5f5f5;
+	    box-shadow: 0px 0px 17px 2px rgb(0, 0, 0, 0.8);
+	}
+	input{
+		width: 400px;
+		height: 35px;
+		margin-top: 10px;
 
-.container {
-    width: 400px;
-    position: absolute;
-    border: none;
-    border-radius: 10px;
-    padding: 40px;
-    color: #f5f5f5;
-    box-shadow: 0px 0px 17px 2px rgb(0, 0, 0, 0.8);
-}
-
-
+	}
   </style>
 </head>
 <body>
 	<section id="form">
-        <div class="container">
-  <h1 class="h1">Đăng ký tài khoản</h1>
-  <form class="form" action="form_dangky" method="GET">
-    <label for="ho">Họ:</label>
-    <input type="text" id="ho" name="ho" required>
-
-    <label for="ten">Tên:</label>
-    <input type="text" id="ten" name="ten" required>
-
-    <label for="ngaysinh">Ngày sinh:</label>
-    <input type="date" id="ngaysinh" name="ngaysinh" required>
-
-    <label for="gioitinh">Giới tính:</label>
-    <select id="gioitinh" name="gioitinh" required>
-      <option value="Nam">Nam</option>
-      <option value="Nữ">Nữ</option>
-      <option value="Không xác định">Không xác định</option>
-    </select>
-
-    <label for="email">Địa chỉ email:</label>
-    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
-
-    <label for="taikhoan">Tên tài khoản:</label>
-    <input type="text" id="taikhoan" name="taikhoan" pattern="[^\s]{8,}" required>
-
-    <label for="matkhau">Mật khẩu:</label>
-    <input type="password" id="matkhau" name="matkhau" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$" required>
-
-    <input type="submit" value="Đăng ký">
+      <div class="container">
+	  <h1 class="h1">Đăng ký tài khoản</h1>
+	  <form class="form" action="form_dangky" method="GET">
+	    <label for="ho">Họ:</label>
+	    <input type="text" id="ho" name="ho" required>
+	
+	    <label for="ten">Tên:</label>
+	    <input type="text" id="ten" name="ten" required>
+	
+	    <label for="ngaysinh">Ngày sinh:</label>
+	    <input type="date" id="ngaysinh" name="ngaysinh" required>
+	
+	    <label for="gioitinh">Giới tính:</label>
+	    <select id="gioitinh" name="gioitinh" required>
+	      <option value="Nam">Nam</option>
+	      <option value="Nữ">Nữ</option>
+	      <option value="Không xác định">Không xác định</option>
+	    </select>
+	
+	    <label for="email">Địa chỉ email:</label>
+	    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+	
+	    <label for="taikhoan">Tên tài khoản:</label>
+	    <input type="text" id="taikhoan" name="taikhoan" pattern="[^\s]{8,}" required>
+	
+	    <label for="matkhau">Mật khẩu:</label>
+	    <input type="password" id="matkhau" name="matkhau" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$" required>
+	    <input type="submit" value="Đăng ký">
+	    
   </form>
   </div>
     </section>
